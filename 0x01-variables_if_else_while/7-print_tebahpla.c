@@ -6,12 +6,12 @@
 
 int main(void)
 {
-	char case = 'z';
+	char c = 'z';
 
-	while (case >= 'a')
+	while (c >= 'a')
 	{
-		putchar(case);
-		case--;
+		putchar(c);
+		c--;
 	}
 	putchar('\n');
 	return (0);
