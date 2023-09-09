@@ -13,15 +13,12 @@ int main(void)
 	{
 		while (m <= 9)
 		{
-			if(!(n == 0 && m ==0))
+			putchar(n + '0');
+			putchar(m + '0');
+			if (n != 9 || m != 9)
 			{
-				if(n != 0 || m != 0)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				putchar(n + '0');
-				putchar(m + '0');
+				putchar(',');
+				putchar(' ');
 			}
 			m++;
 		}
