@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *main - Start of process.
- *Return: 0 if successful.
- */
+*main - Entry point.
+*Return: 0 when successful.
+*/
 
 int main(void)
 {
@@ -13,5 +13,6 @@ int main(void)
 		putchar(letter);
 		letter++;
 	}
+	putchar('\n');
 	return (0);
 }
