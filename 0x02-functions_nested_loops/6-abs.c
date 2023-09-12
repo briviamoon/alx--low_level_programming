@@ -4,20 +4,20 @@
  *Return: val when successful.
  */
 
-int _abs(int)
+int _abs(int arg)
 {
-	if (int < 0 )
+	if (arg < 0 )
 	{
-		int val = int * -1;
+		int val = arg * -1;
 		return (val);
 	}
-	else if (int > 0)
+	else if (arg > 0)
 	{
-		int val = int * 1;
+		int val = arg * 1;
 		return (val);
 	}
 	else
 	{
-		return (val);
+		return (0);
 	}
 }
