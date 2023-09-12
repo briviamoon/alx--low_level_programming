@@ -13,7 +13,7 @@ void jack_bauer(void)
 
 	while (hour >= 0 && hour <= 23)
 	{
-		while(min >= 0 && min <= 59)
+		while (min >= 0 && min <= 59)
 		{
 			_putchar((hour / 10) + '0');
 			_putchar((hour % 10) + '0');
