@@ -11,7 +11,7 @@ int main(void)
 
 	while (counter <= 7)
 	{
-		putchar(array[counter]);
+		_putchar(array[counter]);
 		counter++;
 	}
 	putchar('\n');
