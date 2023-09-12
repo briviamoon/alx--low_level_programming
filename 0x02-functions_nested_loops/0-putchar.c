@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 /**
  *main - Start of process.
  *Return: 0 when positive.
@@ -14,5 +14,6 @@ int main(void)
 		putchar(array[counter]);
 		counter++;
 	}
+	putchar('\n');
 	return (0);
 }
