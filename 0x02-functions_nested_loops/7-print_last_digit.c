@@ -10,13 +10,13 @@ int print_last_digit(int arg)
 {
 	if (arg < 0 && arg > 0)
 	{
-		last = arg % 10;
+		int last = arg % 10;
 
 		return (last);
 	}
-	else if (args == 0)
+	else if (arg == 0)
 	{
-		return (args);
+		return (arg);
 	}
 	else
 	{
