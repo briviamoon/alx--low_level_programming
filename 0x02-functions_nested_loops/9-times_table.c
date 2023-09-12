@@ -21,7 +21,7 @@ void times_table(void)
 			modular = result % 10;
 			whole = result / 10;
 
-			if (result == 0)
+			if (sec == 0)
 			{
 				_putchar('0');
 			}
