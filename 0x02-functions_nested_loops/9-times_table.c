@@ -22,17 +22,23 @@ void times_table(void)
 			whole = result / 10;
 
 			if (result == 0)
+			{
 				_putchar('0');
+			}
 			else if (result < 10)
+			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(modular + '0');
+			}
 			else
+			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(modular + '0');
 				_putchar(whole + '0');
+			}
 		}
 		_putchar('\n');
 	}
