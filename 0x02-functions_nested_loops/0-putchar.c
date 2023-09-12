@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	char array[7] = "_putchar";
+	char array[] = "_putchar";
 	int counter = 0;
 
 	while (counter <= 7)
