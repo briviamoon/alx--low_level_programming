@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  *_islower - informs lower case characters.
+ *@c: character for checking.
  *Return: is_it value.
  */
 
@@ -12,6 +13,10 @@ int _islower(int c)
 	while (low_case <= 'z')
 	{
 		if (low_case == c)
+		{
+			is_it = 1;
+		}
+		else
 		{
 			is_it = 0;
 		}
