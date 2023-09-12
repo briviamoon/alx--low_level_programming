@@ -8,15 +8,11 @@
 
 int print_last_digit(int arg)
 {
-	if (arg < 0 && arg > 0)
+	if (arg != 0)
 	{
 		int last = arg % 10;
 
 		return (last);
-	}
-	else if (arg == 0)
-	{
-		return (arg);
 	}
 	else
 	{
