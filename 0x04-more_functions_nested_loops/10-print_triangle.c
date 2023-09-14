@@ -15,11 +15,11 @@ void print_triangle(int size)
 	{
 		for (count = 0; count < size; count++)
 		{
-			for (spaceNo = count - 1; spaceNo >= 0; spaceNo--)
+			for (spaceNo = size - count; spaceNo >= 0; spaceNo--)
 			{
 				_putchar(space);
 			}
-			for (count = 0; count < size; count++)
+			for (int row = 0; row <= count; row++)
 			{
 				_putchar(block);
 			}
