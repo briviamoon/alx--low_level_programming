@@ -1,10 +1,10 @@
-#include <stdio.h>
 #include "main.h"
 /**
  *main - starting point.
+ *Return: 0 when successful.
  */
 
-void main(void)
+int main(void)
 {
 	int count;
 
@@ -29,4 +29,6 @@ void main(void)
 		}
 	}
 	printf("Buzz\n ");
+
+	return (0);
 }
