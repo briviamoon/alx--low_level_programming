@@ -3,7 +3,7 @@
  *fizz_buzz - prints out buzz & fizz
  */
 
-void main(void)
+void fizz_buzz(void)
 {
 	int count;
 
@@ -26,6 +26,6 @@ void main(void)
 		{
 			printf("%d ", count);
 		}
-		printf("Buzz\n");
 	}
+	printf("Buzz\n ");
 }
