@@ -10,16 +10,17 @@ void print_triangle(int size)
 	char block = '#';
 	char space  = ' ';
 	int spaceNo;
+	int blockNo;
 
 	if (size > 0)
 	{
 		for (count = 0; count < size; count++)
 		{
-			for (spaceNo = size - count; spaceNo >= 0; spaceNo--)
+			for (spaceNo = size - count; spaceNo >= 1; spaceNo--)
 			{
 				_putchar(space);
 			}
-			for (int row = 0; row <= count + 1; row++)
+			for ( blockNo = 1; blockNo <= count; row++)
 			{
 				_putchar(block);
 			}
