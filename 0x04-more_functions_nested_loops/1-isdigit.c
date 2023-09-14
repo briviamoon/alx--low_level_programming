@@ -8,9 +8,15 @@
 
 int _isdigit(int c)
 {
-	while (c >= 0 && c <= 9)
+	char b;
+	int digit;
+
+	for (char b = '0'; b <= '9'; b++)
 	{
-		return (1);
+		if (b == c)
+		{
+			return (1);
+		}
 	}
 	return (0);
 }
