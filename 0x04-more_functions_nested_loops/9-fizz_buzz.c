@@ -3,11 +3,11 @@
  *fizz_buzz - prints out buzz & fizz
  */
 
-void fizz_buzz(void)
+void main(void)
 {
 	int count;
 
-	for (count = 0; count <= 100; count++)
+	for (count = 1; count <= 100; count++)
 	{
 
 		if (count % 3 == 0)
