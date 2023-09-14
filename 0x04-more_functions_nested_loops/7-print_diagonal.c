@@ -13,15 +13,15 @@ void print_diagonal(int n)
 
 	if (n > 0)
 	{
-		for (count = 0; count < n; count++)/*this counts the number of times the diagonals will be put. it is ledd than (n) by 1 accounting for 0*/
+		for (count = 0; count < n; count++)
 		{
-			for (spaceNo = 0; spaceNo < count; spaceNo++)/*this counts the number of spaces to put. the spaces are 1 less than the number of (di)*/
+			for (spaceNo = 0; spaceNo < count; spaceNo++)
 			{
 				_putchar(space);
 			}
 			_putchar(di);
-			_putchar('\n');/*insert new line after every dagonal to make incrementing space tage diagonal shape.*/
-		}/*exit the count looping controling diagonals*/
+			_putchar('\n');
+		}
 	}
 	else
 	{
