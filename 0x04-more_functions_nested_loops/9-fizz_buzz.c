@@ -3,7 +3,7 @@
  *fizz_buzz - prints out buzz & fizz
  */
 
-void fizz_buzz(void)
+void main(void)
 {
 	int count;
 
