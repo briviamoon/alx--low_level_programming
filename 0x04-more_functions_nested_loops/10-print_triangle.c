@@ -14,13 +14,13 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		for (count = 0; count < size; count++)
+		for (count = 1; count <= size; count++)
 		{
 			for (spaceNo = size - count; spaceNo >= 1; spaceNo--)
 			{
 				_putchar(space);
 			}
-			for ( blockNo = 1; blockNo <= count; row++)
+			for ( blockNo = 1; blockNo <= count; blockNo++)
 			{
 				_putchar(block);
 			}
