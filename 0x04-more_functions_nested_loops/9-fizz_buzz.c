@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  *fizz_buzz - prints out buzz & fizz
  */
