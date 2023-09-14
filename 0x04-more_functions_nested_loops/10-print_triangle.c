@@ -20,14 +20,14 @@ void print_triangle(int size)
 			{
 				_putchar(space);
 			}
-			for ( blockNo = 1; blockNo <= count; blockNo++)
+			for (blockNo = 1; blockNo <= count; blockNo++)
 			{
 				_putchar(block);
 			}
 			_putchar('\n');
 		}
 	}
-	else
+	else if (size == 0 || size < 0)
 	{
 		_putchar('\n');
 	}
