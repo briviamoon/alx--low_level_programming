@@ -7,7 +7,7 @@ void main(void)
 {
 	int count;
 
-	for (count = 1; count <= 100; count++)
+	for (count = 1; count < 100; count++)
 	{
 
 		if (count % 3 == 0)
@@ -26,6 +26,6 @@ void main(void)
 		{
 			printf("%d ", count);
 		}
-		printf('\n');
+		printf("Buzz\n");
 	}
 }
