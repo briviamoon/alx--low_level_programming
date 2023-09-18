@@ -74,3 +74,22 @@ A good engineer thinks in reverse and asks himself about the stylistic consequen
 6. Inside the loop, use _putchar to print each character of the string.
 
 7. After the loop, use _putchar to print a newline character '\n' to format the output.
+
+# 8.Arrays are not Pointers.
+
+ [8-print_array.c](https://github.com/briviamoon/alx-low_level_programing/0x05-pointers_arrays_strings/8-print_array.c)
+1. The print_array function is defined with two parameters: a, which is a pointer to an integer array, and n, which is the number of elements to print.
+
+2. Inside the function, an integer variable index is declared to be used as a loop counter.
+
+3. A for loop is used to iterate through the elements of the array from index 0 to n - 1.
+
+4. Inside the loop, a conditional statement checks if the current index is equal to n - 1, indicating the last element of the array.
+
+5. If the current index is the last element, the function prints the element followed by a newline character using printf("%d\n", a[index]).
+
+6. If the current index is not the last element, the function prints the element followed by a comma and space using printf("%d, ", a[index]).
+
+7. The loop continues until all n elements have been printed as specified.
+
+8. The function correctly formats the output with commas, spaces, and a newline character to represent the array's elements.
