@@ -24,13 +24,104 @@
 12. The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h.
 13. Don’t forget to push your header file.
 
+# 0.98 Battery.st
+[0-reset_to_98.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/0-reset_to_98.c)
+1. reset_to_98 function definition.
+
+2. Takes a single parameter n, which is a pointer to an integer.
+
+3. Dereferences the pointer n using *n.
+
+4. Assigns the value 98 to the integer pointed to by n.
+
+5. Effectively resets the value of the integer to 98.
+
+# 1.Don't swap horses in crossing a stream
+
+[1-swap.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/1-swap.c)
+1. swap_int function definition.
+
+2. Takes two parameters, a and b, which are pointers to integers.
+
+3. Declares an integer variable temp to temporarily store a value.
+
+4. Copies the value pointed to by a into temp using temp = *a.
+
+5. Assigns the value pointed to by b to a using *a = *b. This effectively swaps the values of a and b.
+
+6. Assigns the value stored in temp (originally from a) to b using *b = temp. This completes the swap.
+
+7. After the function is executed, the values of a and b have been swapped.
+
+# 2.This report, by its very length, defends itself against the risk of being read
+
+[2-strlen.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/2-strlen.c)
+1. _strlen function definition.
+
+2. Takes a single parameter, s, which is a pointer to a character (a string).
+
+3. Declares an integer variable len to store the length of the string.
+
+4. Uses a while loop to iterate through the characters of the string.
+
+5. Inside the loop, checks if the current character pointed to by s is not the null terminator '\0'.
+
+6. If the character is not the null terminator, increments both s and len to move to the next character and increase the length.
+
+7. Continues this process until the null terminator '\0' is encountered, indicating the end of the string.
+
+8. Once the loop completes, the function returns the value of len, which represents the length of the string.
+
+# 3.I do not fear computers. I fear the lack of them
+
+[3-puts.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/3-puts.c)
+1. _puts function definition.
+
+2. Takes a single parameter, str, which is a pointer to a character (a string).
+
+3. Uses a while loop to iterate through the characters of the string.
+
+4. Inside the loop, checks if the current character pointed to by str is not the null terminator '\0'.
+
+5. If the character is not the null terminator, it uses the _putchar function to print the character.
+
+6. After printing the character, increments the str pointer to move to the next character in the string.
+
+7. Continues this process until the null terminator '\0' is encountered, indicating the end of the string.
+
+8. Once the loop completes, it uses _putchar to print a newline character '\n' to move to the next line, effectively printing the entire string with a newline at the end.
+
+# 4.I can only go one way. I've not got a reverse gear
+
+[4-print_rev.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/4-print_rev.c)
+1. print_rev function definition.
+
+2. Takes a single parameter, s, which is a pointer to a character (a string).
+
+3. Declares an integer variable len to store the length of the string and initializes it to 0.
+
+4. Uses a while loop to calculate the length of the string by iterating through its characters.
+
+5. Inside the loop, it checks if the current character s[len] is not the null terminator '\0'.
+
+6. If the character is not the null terminator, it increments the len variable and moves to the next character in the string.
+
+7. Once the loop completes, the len variable contains the length of the string.
+
+8. Declares an integer variable i to use as an index for printing characters in reverse order.
+
+9. Uses a for loop to print the characters of the string in reverse order.
+
+10. Starting from i = len - 1 (the last character of the string), it decrements i until it reaches 0.
+
+11. Inside the loop, it uses the _putchar function to print each character in reverse order.
+
+12. After printing all characters in reverse, it uses _putchar to print a newline character '\n' to start a new line.
+
 # 5.A Good Engineer
 
-
-[5-rev_string](https://github.com/briviamoon/alx-low_level_programing/main/0x05-pointers_arrays_strings/5-rev_string.c)
- [5-rev_string.c](https://github.com/briviamoon/alx-low_level_programing/main/0x05-pointers_arrays_strings/5-rev_string.c)
+[5-rev_string.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/5-rev_string.c)
 A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes
-
 1. 'i' and 'j' are initialized before the loop:
 
 2. i starts at 0, indicating the index of the first character in the string.
@@ -51,7 +142,7 @@ A good engineer thinks in reverse and asks himself about the stylistic consequen
 
 # 6.Half The Lies They Tell
 
-[6-puts2.c](https://github.com/briviamoon/alx-low_level_programing//0x05-pointers_arrays_strings/6-puts2.c)
+[6-puts2.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/6-puts2.c)
 1. We use the variable i to iterate through the string.
 
 2. Inside the while loop, we check if i is even using the condition if (i % 2 == 0). If i is even, we print the character at str[i].
@@ -60,7 +151,7 @@ A good engineer thinks in reverse and asks himself about the stylistic consequen
 
 # 7.Winning is only half of it
 
- [7-puts_half.c](https://github.com/briviamoon/alx-low_level_programing/0x05-pointers_arrays_strings/7-puts_half.c)
+ [7-puts_half.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/7-puts_half.c)
 1. Declare integer variables index, len, and start to be used in the function.
 
 2. Initialize len to 0 to count the number of characters in the input string str.
@@ -77,7 +168,7 @@ A good engineer thinks in reverse and asks himself about the stylistic consequen
 
 # 8.Arrays are not Pointers.
 
- [8-print_array.c](https://github.com/briviamoon/alx-low_level_programing/0x05-pointers_arrays_strings/8-print_array.c)
+ [8-print_array.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/8-print_array.c)
 1. The print_array function is defined with two parameters: a, which is a pointer to an integer array, and n, which is the number of elements to print.
 
 2. Inside the function, an integer variable index is declared to be used as a loop counter.
@@ -96,7 +187,7 @@ A good engineer thinks in reverse and asks himself about the stylistic consequen
 
 # 9.strcpy
 
-[9-strcpy.c](https://github.com/briviamoon/alx-low_level_programing/blob/main/0x05-pointers_arrays_strings/9-strcpy.c)
+[9-strcpy.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/9-strcpy.c)
 1. The _strcpy function is defined with two parameters: dest, which is the destination of the copied string, and src, which is the source of the copied string.
 
 2. A pointer variable home is declared and initialized with the value of dest. This pointer will be used to store the original address of the destination buffer and will be returned at the end.
