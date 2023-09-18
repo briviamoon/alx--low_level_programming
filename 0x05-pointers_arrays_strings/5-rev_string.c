@@ -5,7 +5,7 @@
  *@s: string argument.
  */
 
-void rev_string(chsr *s)
+void rev_string(char *s)
 {
 	int len = 0;
 	int index;
