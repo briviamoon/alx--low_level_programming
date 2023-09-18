@@ -93,3 +93,22 @@ A good engineer thinks in reverse and asks himself about the stylistic consequen
 7. The loop continues until all n elements have been printed as specified.
 
 8. The function correctly formats the output with commas, spaces, and a newline character to represent the array's elements.
+
+# 9.strcpy
+
+[9-strcpy.c](https://github.com/briviamoon/alx-low_level_programing/blob/main/0x05-pointers_arrays_strings/9-strcpy.c)
+1. The _strcpy function is defined with two parameters: dest, which is the destination of the copied string, and src, which is the source of the copied string.
+
+2. A pointer variable home is declared and initialized with the value of dest. This pointer will be used to store the original address of the destination buffer and will be returned at the end.
+
+3. Using a while loop, the function begins copying characters from src to dest. The loop continues until it reaches the null terminator '\0' at the end of the source string.
+
+4. Inside the loop, the current character from src is copied to the current position in dest using *dest = *src. This effectively copies characters one by one from the source string to the destination buffer.
+
+5. After copying a character, both dest and src pointers are incremented to point to the next character in their respective strings.
+
+6. The loop continues until the entire string has been copied from src to dest.
+
+7. Once all characters have been copied, a null terminator '\0' is added to the end of the dest buffer to ensure that it forms a valid C string.
+
+8. Finally, the function returns the home pointer, which points to the beginning of the copied string in the dest buffer.
