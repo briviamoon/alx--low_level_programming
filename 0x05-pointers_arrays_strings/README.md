@@ -67,7 +67,7 @@ A good engineer thinks in reverse and asks himself about the stylistic consequen
 
 3. Use a while loop to calculate the length of the string by counting characters until reaching the null terminator '\0'.
 
-4. Determine the value of start based on whether the length of the string is even or odd. If odd, set start to (len - 1) / 2; if even, set start to len / 2.
+4. Determine the value of start based on whether the length of the string is even or odd. If odd, set start to (len + 1) / 2; if even, set start to len / 2.
 
 5. Use a for loop with the index variable to iterate from the start index to the end of the string (i.e., < len).
 
