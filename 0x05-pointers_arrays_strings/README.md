@@ -203,3 +203,33 @@ A good engineer thinks in reverse and asks himself about the stylistic consequen
 7. Once all characters have been copied, a null terminator '\0' is added to the end of the dest buffer to ensure that it forms a valid C string.
 
 8. Finally, the function returns the home pointer, which points to the beginning of the copied string in the dest buffer.
+
+# 101-Keygen
+
+[101-keygen.c](https://github.com/briviamoon/alx-low_level_programing/blob/master/0x05-pointers_arrays_strings/101-keygen.c)
+**Part 1**
+```c```
+ char randomChar();
+**gets a random character**
+1. The bin array contains a set of characters from which the random character will be selected.
+2. This character set includes lowercase and uppercase letters, digits, and a variety of special characters.
+3. ```c``` const int binLength = sizeof(bin) - 1; 
+    calculates the length of the character set (bin).
+4. It subtracts 1 from the size of the array to account for the null terminator '\0' at the end of the string.
+5. ```c``` rand() 
+    is a standard C library function that generates pseudo-random integers.
+6. ```c``` rand() % binLength 
+    calculates a random integer within the range of 0 to (binLength - 1.)
+7. This random integer is used as an index to select a character from the bin array.
+8. The result of ```c``` bin[rand() % binLength] 
+    is used as an index to access a character from the bin array.
+9. The selected character is then returned as the result of the randomChar function.
+
+**Part 2**
+```void generator(char *password, int length);```
+**generates random password**
+1. ```char *password``` This is a pointer to a character array or value within the array where the generated password will be stored.
+2. ```int length``` parameter specifies the desired length of the generated password.
+3. Uses the for loop to run from i = 0 to i < length, where i is a loop counter in order to get that random characters asigned one by on.
+4. the ```randomChar()``` function is called within th loop to generate a random character.
+5. The character is then assigned to the i-th position in the password array, bulding our new random password.

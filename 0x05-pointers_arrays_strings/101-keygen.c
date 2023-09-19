@@ -21,7 +21,7 @@ int main(void)
     char password[passLength + 1];
 
     generator(password, passLength);
-    printf("%s", password);
+    printf("%s\n", password);
     return (0);
 }
 
@@ -35,7 +35,8 @@ char randomChar(void)
 
 void generator(char *password, int length)
 {
-    for (int i = 0; i < length; i++) {
+    int i;
+    for (i = 0; i < length; i++) {
         password[i] = randomChar();
     }
     password[length] = '\0';
