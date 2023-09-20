@@ -13,10 +13,6 @@ char *_strncat(char *dest, char *src, int n)
 	char *home = dest;
 	char *away = src;
 
-	while (*home != '\0')
-	{
-		home++;
-	}
 
 	while (*away != '\0' && n > 0)
 	{
