@@ -22,5 +22,5 @@ char *_strcat(char *dest,  char *src)
 		final++;
 	}
 	*final = '\0';
-	return (final);
+	return (dest);
 }

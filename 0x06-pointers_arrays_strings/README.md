@@ -18,3 +18,16 @@
 
 # 0.strcat
 ```char *_strcat(char *dest, char *src);```
+1. Function Definition: Your code includes a function definition for ```_strcat``` that takes two string pointers as arguments ```(dest and src)``` and returns a pointer to the concatenated string.
+
+2. Initialization: You initialize a pointer ```final``` to the ```dest``` string, which will be used to traverse and append characters to the end of ```dest```.
+
+3. Find End of ```dest```: You use a while loop to traverse the ```dest``` string using the ```final``` pointer until the null byte ('\0') at the end of the string is reached. This loop ensures that ```final``` points to the end of ```dest``` after the loop execution.
+
+4. Copy Characters from ```src``` to ```dest```: You use another while loop to copy characters from the ```src``` string to the ```dest``` string, starting from where ```final``` is pointing. This loop continues until the null byte ('\0') at the end of ```src``` is reached. This effectively appends ```src``` to the end of ```dest```.
+
+5. Null-Terminate: After copying all characters from ```src``` to ```dest```, you add a null byte ('\0') to terminate the concatenated string. This ensures that the resulting string is properly null-terminated.
+
+6. Return Value: You return a pointer to the beginning of the ```dest``` string, which is now the concatenated string containing both ```dest``` and ```src```.
+
+7. Your ```_strcat``` function correctly concatenates two strings, and the returned pointer points to the beginning of the resulting concatenated string.
