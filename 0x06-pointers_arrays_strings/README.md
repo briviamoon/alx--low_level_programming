@@ -17,7 +17,7 @@
 14. Don’t forget to push your header file.
 
 # 0.strcat
-```char *_strcat(char *dest, char *src);```
+***```char *_strcat(char *dest, char *src);```***
 1. Function Definition: Your code includes a function definition for ```_strcat``` that takes two string pointers as arguments ```(dest and src)``` and returns a pointer to the concatenated string.
 
 2. Initialization: You initialize a pointer ```final``` to the ```dest``` string, which will be used to traverse and append characters to the end of ```dest```.
@@ -31,3 +31,6 @@
 6. Return Value: You return a pointer to the beginning of the ```dest``` string, which is now the concatenated string containing both ```dest``` and ```src```.
 
 7. Your ```_strcat``` function correctly concatenates two strings, and the returned pointer points to the beginning of the resulting concatenated string.
+
+# 1.strncat
+***```char *_strncat(char *dest, char *src, int n);```***
