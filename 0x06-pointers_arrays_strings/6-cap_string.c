@@ -16,7 +16,6 @@ char *cap_string(char *str)
 		{
 			*ptr = *ptr + ('A' - 'a');
 		}
-		else if
 		ptr++;
 	}
 	return (str);
