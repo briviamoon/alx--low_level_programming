@@ -5,6 +5,7 @@
  * @dest: destination argument.
  * @src: source argument.
  * @n: number of max bytes to copy.
+ * Return: retirns (dest)pointer to destination.
 */
 
 char *_strncpy(char *dest, char *src, int n)
