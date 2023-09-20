@@ -22,16 +22,10 @@ char *_strncpy(char *dest, char *src, int n)
 		}
 		else
 		{
-			*home = '*';
+			*home = '\0';
 		}
 		home++;
 	}
-
-	while (index < n)
-	{
-		*home = '*';
-		home++;
-		index++;
-	}
+	
 	return (dest);
 }
