@@ -34,3 +34,19 @@
 
 # 1.strncat
 ***```char *_strncat(char *dest, char *src, int n);```***
+1. Initialize two pointers, ```home``` and ```away```, to the start of the ```dest``` and ```src``` strings, respectively.
+
+2. Iterate through the ```dest``` string using the ```home``` pointer until the null terminator ('\0') is reached. This finds the end of the ```dest``` string.
+
+3. In a loop, while characters in the ```src``` string (pointed to by ```away```) are not null ('\0') and n is greater than 0 (indicating there are more bytes to concatenate):
+
+4. Copy the character pointed to by ```away``` to the position pointed to by ```home``` (concatenation).
+
+5. Increment both ```home``` and ```away``` pointers to move to the next characters.
+
+6. Decrement n to keep track of the remaining bytes to concatenate.
+After the loop, null-terminate the resulting concatenated string by placing a null byte ```('\0')``` at the end of the ```dest``` string, where ```home``` is now pointing.
+
+7. Finally, return a pointer to the original starting position of the ```dest``` string.
+
+In summary, the _strncat function appends characters from the ```src``` string to the end of the ```dest``` string, limiting the concatenation to a maximum of n bytes. It ensures that the resulting string is null-terminated and returns a pointer to the modified ```dest``` string.
