@@ -4,14 +4,14 @@
  * cap_string - capitalizes all words if a string.
  * @str: string to capitalize.
  * Return: str.
-*/
+ */
 
 char *cap_string(char *str)
 {
 	char *ptr = str;
-	char separator[] = "\t\n,;.!?\"(){}";
+	char separator[] = ",;.!?\"(){}";
 	int counter;
-	int marker = 1;
+	int marker;
 
 	while (*ptr != '\0')
 	{
@@ -19,7 +19,8 @@ char *cap_string(char *str)
 		{
 			if (*ptr == separator[counter])
 			{
-
+				marker = 1;
+				break;
 			}
 		}
 
