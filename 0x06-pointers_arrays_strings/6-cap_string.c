@@ -29,10 +29,14 @@ char *cap_string(char *str)
 					*ptr = *ptr + ('A' - 'a');
 				}
 			}
+			/*reset marker back to 0*/
 			marker = 0;
 		}
 		else if (separator(*ptr))
 		{
+			/*marker is always set to 0ne*/
+			/*coz separater is found*/
+			/*anticipating next letter*/
 			marker = 1;
 		}
 		ptr++;
