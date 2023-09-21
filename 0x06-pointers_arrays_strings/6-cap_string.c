@@ -9,12 +9,24 @@
 char *cap_string(char *str)
 {
 	char *ptr = str;
+	char separator[] = "\t\n,;.!?\"(){}";
+	int counter;
+	int marker = 1;
 
 	while (*ptr != '\0')
 	{
-		if (*ptr >= 'a' && *ptr <= 'z')
+		for (counter = 0; separator[counter] != '\0'; counter++)
+		{
+			if (*ptr == separator[counter])
+			{
+
+			}
+		}
+
+		if (marker && *ptr >= 'a' && *ptr <= 'z')
 		{
 			*ptr = *ptr + ('A' - 'a');
+			marker = 0;
 		}
 		ptr++;
 	}
