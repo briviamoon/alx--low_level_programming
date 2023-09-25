@@ -10,13 +10,15 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	char *point = s;
+
+	while (*point != '\0')
 	{
-		if (*s == c)
+		if (*point == c)
 		{
-			return (s);
+			return (point);
 		}
-		s++;
+		point++;
 	}
 	return (NULL);
 }
