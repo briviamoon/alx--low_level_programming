@@ -16,7 +16,7 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		leftSum += point[i * size + i];
-		rightSum += point[i * size + (2 - i)];
+		rightSum += point[i * size + (size - 1 - i)];
 	}
 	printf("%d, %d\n", leftSum, rightSum);
 }
