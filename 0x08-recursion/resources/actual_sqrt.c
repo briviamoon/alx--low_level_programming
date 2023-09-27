@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 /**
  * actual_sqrt - finds the sqrt of a number
