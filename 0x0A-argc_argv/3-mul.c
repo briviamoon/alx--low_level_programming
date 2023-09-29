@@ -10,8 +10,6 @@
 
 int main(int argc, char **argv)
 {
-	int i;
-
 	if (argc < 2)
 	{
 		printf("ERROR\n");
@@ -19,8 +17,8 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		i = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", i);
+		printf("%d", atoi(argv[1]) * atoi(argv[2]));
+		printf("\n");
 	}
-	return (i);
+	return (1);
 }
