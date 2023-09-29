@@ -20,5 +20,5 @@ int main(int argc, char **argv)
 		printf("%d", atoi(argv[1]) * atoi(argv[2]));
 		printf("\n");
 	}
-	return (1);
+	return (0);
 }
