@@ -2,49 +2,50 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+int is_positive_number(char *s);
+
 /**
- * main - print number of cmd args
- * @argc: numbe of cmd args
- * @argv: array of args
+ * main - print number of command arguments
+ * @argc: number of command arguments
+ * @argv: array of command arguments
+ *
+ * Description: checks if each strung of args is a number
+ * -gets the sum of the arguments that are numbers
  * Return: o if success
  */
 
-int real_num(char *s);
-
 int main(int argc, char **argv)
 {
-	int i, j = 0;
+	int i, sum = 0;
 
 	if (argc < 2)
 	{
-		return (0);
+		printf("0\n");
 	}
 	else
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (real_num(argv[i]))
-			{
-				j += atoi(argv[i]);
-			}
-			else
+			if (!is_positive_number(argv[i]))
 			{
 				printf("Error\n");
 				return (1);
 			}
+			sum += atoi(argv[i]);
 		}
-		printf("%d\n", j);
+		printf("%d\n", sum);
 	}
+
 	return (0);
 }
 
 /**
- * real_num - checks if it's real number
- * @s: string ptr
- * Return: 0 if false.
+ * is_positive_number - checks if a number id positive
+ * @s: pointer to a string
+ * Return: 0 is false and  1 if true
 */
 
-int real_num(char *s)
+int is_positive_number(char *s)
 {
 	while (*s != '\0')
 	{
