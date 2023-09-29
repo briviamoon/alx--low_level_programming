@@ -7,12 +7,9 @@
  * Return: 0 if success
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	if (argc == 1 && argv[0] != NULL)
-	{
-		printf("%s", argv[0]);
-		putchar('\n');
-	}
+	(void)argc;
+	printf("%s\n", argv[0]);
 	return (0);
 }
