@@ -4,6 +4,7 @@
  * str_concat - concantinates two strings.
  * @s1: target sring pointer
  * @s2: source string pointer
+ * Return: Null if new is null or new pointer adress if success
  */
 
 char *str_concat(char *s1, char *s2)
