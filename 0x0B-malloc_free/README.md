@@ -14,8 +14,6 @@
 
 ## Requirements
 
-### General
-
 1. Allowed editors: vi, vim, emacs
 
 2. All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
