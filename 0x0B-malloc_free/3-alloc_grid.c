@@ -18,26 +18,16 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-
-	/*allocate the grid's row memory*/
 	grid = (int **)malloc(sizeof(int *) * height);
-
-	/*if allocation fails, exit with null*/
 	if (grid == NULL)
 	{
 		return (NULL);
 	}
-
-	/*assign values to the grid*/
 	for (i = 0; i < height; i++)
 	{
-		/*allocating memory for the column within the grid*/
 		grid[i] = (int *)malloc(sizeof(int) * width);
-
-		/*if mem alocation within grid collumns fail, exit with null*/
 		if (grid[i] == NULL)
 		{
-			/*free the alocatied mem on all the previous positions*/
 			for (j = 0; j < i; j++)
 			{
 				free(grid[j]);
