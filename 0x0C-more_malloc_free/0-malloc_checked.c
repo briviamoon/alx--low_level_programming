@@ -3,6 +3,7 @@
 /**
  * malloc_checked - allocates memory
  * @b: unsigned int
+ *
  * Return: ptr if succesful, exit status 98 when not.
 */
 
