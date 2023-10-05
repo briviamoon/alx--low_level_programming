@@ -19,13 +19,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *newpoint;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
 	while (s1[l1] != '\0')
 	{
 		l1++;
@@ -38,9 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = l2;
 	newpoint = malloc(l1 + l2 + 1);
 	if (newpoint == NULL)
-	{
 		return (NULL);
-	}
 	for (counter1 = 0; counter1 < l1; counter1++)
 	{
 		newpoint[counter1] = s1[counter1];
