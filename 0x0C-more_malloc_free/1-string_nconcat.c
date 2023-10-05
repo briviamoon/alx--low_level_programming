@@ -51,4 +51,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	newpoint[counter1 + counter2] = '\0';
 	return (newpoint);
+	free(newpoint);
 }
