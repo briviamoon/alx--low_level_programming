@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		_putchat('o');
 		_putchar('r');
 		_putchar('\n');
-		exit (98);
+		exit(98);
 	}
 
 	if (!_isdigit(argv[1]) || !_isdigit(argv[2]))
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		_putchat('o');
 		_putchar('r');
 		_putchar('\n');
-		exit (98);
+		exit(98);
 	}
 
 	_multiply(argv[1], argv[2]);
@@ -68,6 +68,7 @@ int _isdigit(char *str)
 int _strlen(char *str)
 {
 	int len = 0;
+
 	while (*str)
 	{
 		len++;
