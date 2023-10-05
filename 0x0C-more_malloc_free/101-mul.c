@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		_putchar('E');
 		_putchar('r');
 		_putchar('r');
-		_putchat('o');
+		_putchar('o');
 		_putchar('r');
 		_putchar('\n');
 		exit(98);
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		_putchar('E');
 		_putchar('r');
 		_putchar('r');
-		_putchat('o');
+		_putchar('o');
 		_putchar('r');
 		_putchar('\n');
 		exit(98);
