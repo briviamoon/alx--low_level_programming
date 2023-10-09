@@ -17,8 +17,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog2);
 		return (NULL);
 	}
-	dog2->name = malloc(sizeof(name));
-	dog2->owner = malloc(sizeof(owner));
+	dog2->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	dog2->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if (dog2->name == NULL || dog2->owner == NULL)
 	{
 		free(dog2->name);
@@ -51,4 +51,24 @@ char *_strcpy(char *dest, char *src)
 	*dest = '\0';
 
 	return (home);
+}
+
+/**
+ *_strlen - grts string length.
+ *@s: string argument
+ *Return: length.
+ *(*s != '\0'): iterate throught each char while it's not null.
+ *len: a counter throught the strin array positions/index.
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s != '\0')
+	{
+		s++;
+		len++;
+	}
+	return (len);
 }
