@@ -5,15 +5,15 @@
 #include <stdlib.h>
 
 /**
- * struct operationformat - stucture of opearation
- * @operator: pointer to operator
- * @funct: function to be called
+ * struct op - stucture of opearation
+ * @op: pointer to operator
+ * @f: function to be called
 */
-typedef struct operationformat
+typedef struct op
 {
-	char *operator;
-	int (*funct)(int a, int b);
-} other_optns;
+	char *op;
+	int (*f)(int a, int b);
+} op_t;
 
 int op_add(int a, int b);
 int op_sub(int a, int b);

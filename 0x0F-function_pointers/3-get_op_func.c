@@ -10,7 +10,7 @@
 int (*get_op_func(char *s))(int, int)
 {
 	/*array of opt_t structures*/
-	other_optns operation[] = {
+	op_t operation[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
@@ -20,9 +20,9 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (operation[i].operator != NULL)
+	while (operation[i].op != NULL)
 	{
-		if ((*(operation[i].operator) == *s) && (s[1] == '\0'))
+		if ((*(operation[i].op) == *s) && (s[1] == '\0'))
 		{
 			return (operation[i].funct);
 		}
