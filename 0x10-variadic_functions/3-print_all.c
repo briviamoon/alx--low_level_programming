@@ -30,10 +30,7 @@ void print_all(const char *const format, ...)
 			{
 				printf("(nil)");
 			}
-			if (str != NULL)
-			{
-				printf("%s%s", separator, str);
-			}
+			printf("%s%s", separator, str);
 			break;
 		default:
 			i++;
