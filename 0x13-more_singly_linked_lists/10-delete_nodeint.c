@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * delete_node_at_index - deletes a node at index
+ * delete_nodeint_at_index - deletes a node at index
  * @head: pointer to a poiner to a node
  * @index: index for deletion
+ * Return:1 if siccess, -1 if fail
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
