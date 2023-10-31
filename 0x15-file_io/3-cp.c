@@ -10,7 +10,7 @@ void error(int code, const char *format, ...)
 	va_list args;
 
 	va_start(args, format);
-	dprintf(2, format, args);
+	dprintf(STDERR_FILENO, format, args);
 	va_end(args);
 	exit(code);
 }
