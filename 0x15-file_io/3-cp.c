@@ -32,17 +32,24 @@ int main(int argc, char *argv[])
 
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
+	{
+		close(file_from);
 		error(98, "Error: Can't read from file %s\n", argv[1]);
-
+	}
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (file_to == -1)
+	{
+		close(file_to);
 		error(99, "Error: Can't write to file %s\n", argv[2]);
-
-	while ((bytes_read = read(file_from, buffer, sizeof(buffer))) > 0)
+	}
+	bytes_read = read(file_from, buffer, sizeof(buffer));
+	while (bytes_read > 0)
 	{
 		bytes_written = write(file_to, buffer, bytes_read);
 		if (bytes_written != bytes_read)
-			error(99, "Error: Can't write to file %s\n", argv[2]);
+			close(file_from);
+		close(file_to);
+		error(99, "Error: Can't write to file %s\n", argv[2]);
 	}
 
 	if (bytes_read == -1)
