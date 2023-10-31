@@ -10,6 +10,8 @@
 #include <string.h>
 #include <stdarg.h>
 #include <errno.h>
+#include <elf.h>
+#define _GNU_SOURCE
 
 #define BUFFER_SIZE 1024
 
